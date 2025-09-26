@@ -68,8 +68,8 @@ jobs:
       - name: Collect artifacts
         run: |
           mkdir build_result
-          cp build64/libdobby.so build_result/libdobby_x64.so
-          cp build86/libdobby.so build_result/libdobby_x86.so
+          cp build64/libdobby.so build_result/libdobby_x64.a
+          cp build86/libdobby.so build_result/libdobby_x86.a
           
       - name: Upload a Build Artifact
         uses: actions/upload-artifact@v4.6.2
