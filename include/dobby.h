@@ -143,7 +143,7 @@ typedef struct _HookEntryInfo {
 } HookEntryInfo;
 
 // DobbyWrap <==> DobbyInstrument, so use DobbyInstrument instead of DobbyWrap
-#if 0
+#if 1
 // wrap function with pre_call and post_call
 typedef void (*PreCallTy)(RegisterContext *ctx, const HookEntryInfo *info);
 typedef void (*PostCallTy)(RegisterContext *ctx, const HookEntryInfo *info);
