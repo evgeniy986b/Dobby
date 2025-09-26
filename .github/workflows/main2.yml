@@ -116,7 +116,7 @@ jobs:
       - name: ZIP versions
         run: |
           zip -r -j dobby-win.zip Windows/*.dll
-          zip -r -j dobby-linux.zip Linux/*.so
+          zip -r -j dobby-linux.zip Linux/*.a
           zip -r -j dobby-macos.zip macOS/*.dylib
       
       - name: Automatic Releases
